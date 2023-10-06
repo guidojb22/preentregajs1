@@ -1,3 +1,4 @@
+// CONSIGNA
 // - Pregunte al usuario su nombre a través de un prompt. 
 // - Con el valor de su nombre, envíe un mensaje a través de un alert que le de la bienvenida. Ej: "Bienvenido a nuestro ecommerce Javier."
 // - Pregúntele al usuario, con un nuevo prompt, qué categoría de producto le interesaría comprar, ej: "¿Qué desea comprar? Elija la opción 1 si son remeras, opción 2 si son pantalones". La frase y la forma de introducir los datos queda a criterio de ustedes. Lo necesario es que a partir del valor ingresado, se valide qué mostrar luego.
@@ -9,12 +10,13 @@
 // PUEDEN HACER UNA FUNCIÓN QUE CONTENGA UN ALERT Y QUE EL TEXTO DEL ALERT SEA PASADO COMO PARÁMETRO, COSA DE NO REPETIR LOS ALERTS Y APRENDER A HACER LÓGICA REUTILIZABLE.
 
 
-function saludar(nombre) {
+function saludar() 
+{   let nombre = prompt ("Ingrese su nombre por favor");
     alert("Bienvenido " + nombre + " a nuestro bazar online.");
- }
- saludar(prompt ("Ingrese su nombre, por favor"));
+}
+ saludar();
 
-let categoria = Number(prompt ("¿Qué producto está interesado en comprar? Opción 1: Tenedor. Opción 2: Cuchillo. Opción 3: Cuchara."))
+let categoria = Number(prompt ("¿Qué producto está interesado en comprar? Ingrese 1 para Tenedor. Ingrese 2 para Cuchillo. Ingrese 3 para Cuchara."))
 
 if (categoria == 1) {
     let confirmTenedor = confirm ("Usted eligió tenedor. Su precio es de $100. ¿Desea comprar este artículo?")
